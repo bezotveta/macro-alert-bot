@@ -2,7 +2,7 @@
  "sent": {},
  "digest": "2026-09-07",
  "weekly": "",
- "tg_offset": 576148943,
+ "tg_offset": 576148949,
  "prefs": {
   "disabled": [],
   "min_power": 1
@@ -658,7 +658,6 @@
     "previous": ""
    }
   ],
-  "fetched_at": "2026-09-07T08:36:52+00:00",
-  "failed_since": "2026-09-07T08:37:52+00:00"
+  "fetched_at": "2026-09-07T14:35:57+00:00"
  }
 }
