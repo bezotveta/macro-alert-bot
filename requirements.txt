@@ -1,0 +1,3 @@
+# Зависимостей нет.
+# Бот написан на чистой стандартной библиотеке Python 3.11+
+# (urllib, json, zoneinfo, dataclasses). pip install запускать не нужно.

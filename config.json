@@ -1,0 +1,19 @@
+{
+  "timezone": "Europe/Kyiv",
+
+  "_min_power": "3 = только большие палки, 2 = крупные и большие (рекомендуется), 1 = всё",
+  "min_power": 2,
+
+  "_disabled_rules": "ключи событий из filters.py, которые не нужны вообще. Проще управлять командой /menu в Telegram",
+  "disabled_rules": [],
+
+  "lead_minutes": [30, 5],
+  "tolerance_minutes": 8,
+  "send_results": true,
+  "daily_digest_at": "09:00",
+  "weekly_preview": { "weekday": 6, "at": "18:00" },
+
+  "enable_commands": true,
+  "include_adp": false,
+  "static_calendars": ["cbr_dates.json"]
+}
