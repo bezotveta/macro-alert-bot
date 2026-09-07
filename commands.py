@@ -99,6 +99,12 @@ def status_text(state: dict, cfg: dict) -> str:
     if off:
         names = ", ".join(sorted(off))
         lines += ["", f"Выключено вручную: <code>{escape(names)}</code>"]
+    cache = state.get("calendar") or {}
+    if cache.get("failed_since"):
+        lines += ["", "⚠️ Календарь сейчас не загружается, работаю по последней копии"]
+    elif cache.get("fetched_at"):
+        stamp = str(cache["fetched_at"]).replace("T", " ")[:16]
+        lines += ["", f"Календарь обновлён: {stamp} UTC"]
     lines += ["", "Изменить: /menu или /power"]
     return "\n".join(lines)
 

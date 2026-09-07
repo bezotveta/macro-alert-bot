@@ -3,17 +3,24 @@ from __future__ import annotations
 
 import json
 import re
+import sys
+import time
+import urllib.error
 import urllib.request
 from dataclasses import dataclass
 from datetime import datetime, timezone
 from pathlib import Path
 
 # Бесплатный публичный фид Forex Factory. Ключ API не нужен.
-FF_FEEDS = (
-    "https://nfs.faireconomy.media/ff_calendar_thisweek.json",
-    "https://nfs.faireconomy.media/ff_calendar_nextweek.json",
-)
+# Неделя у Forex Factory начинается в воскресенье, поэтому одного фида
+# thisweek хватает и для воскресного обзора недели вперёд.
+# Адрес ff_calendar_nextweek.json источник отключил (отдаёт 404) — не запрашиваем.
+FF_FEEDS = ("https://nfs.faireconomy.media/ff_calendar_thisweek.json",)
 UA = "Mozilla/5.0 (compatible; macro-alert-bot/1.0)"
+
+# С серверов GitHub фид часто отвечает 429 ("слишком много запросов":
+# IP общий на всех пользователей). Лечится паузой и повтором.
+RETRY_WAITS = (4, 12, 30)
 
 
 @dataclass(frozen=True)
@@ -33,12 +40,27 @@ class Event:
         return f"{self.currency}|{self.title}|{self.dt.strftime('%Y-%m-%dT%H:%M')}"
 
 
-def _http_json(url: str, timeout: int = 25):
-    req = urllib.request.Request(
-        url, headers={"User-Agent": UA, "Accept": "application/json"}
-    )
-    with urllib.request.urlopen(req, timeout=timeout) as resp:
-        return json.loads(resp.read().decode("utf-8", "replace"))
+def _http_json(url: str, timeout: int = 25, *, waits=RETRY_WAITS):
+    """GET c повторами: 429 и ошибки сервера — не повод сдаваться сразу."""
+    last = "неизвестная ошибка"
+    for attempt in range(len(waits) + 1):
+        req = urllib.request.Request(
+            url, headers={"User-Agent": UA, "Accept": "application/json"}
+        )
+        try:
+            with urllib.request.urlopen(req, timeout=timeout) as resp:
+                return json.loads(resp.read().decode("utf-8", "replace"))
+        except urllib.error.HTTPError as exc:
+            last = f"HTTP {exc.code}"
+            retriable = exc.code == 429 or 500 <= exc.code < 600
+        except Exception as exc:  # noqa: BLE001
+            last = str(exc)
+            retriable = True
+        if not retriable or attempt >= len(waits):
+            break
+        print(f"   {url}: {last}, повтор через {waits[attempt]} с", file=sys.stderr)
+        time.sleep(waits[attempt])
+    raise RuntimeError(last)
 
 
 def _clean(value):
@@ -75,17 +97,27 @@ def parse_ff_rows(rows) -> list[Event]:
     return out
 
 
-def fetch_forexfactory(feeds=FF_FEEDS) -> list[Event]:
-    events: list[Event] = []
+def fetch_ff_rows(feeds=FF_FEEDS) -> list[dict]:
+    """Сырые строки календаря — их удобно класть в кэш как есть."""
+    rows: list[dict] = []
     errors: list[str] = []
     for url in feeds:
         try:
-            events.extend(parse_ff_rows(_http_json(url)))
+            data = _http_json(url)
         except Exception as exc:  # noqa: BLE001
             errors.append(f"{url}: {exc}")
-    if not events and errors:
-        raise RuntimeError("Не удалось загрузить календарь -> " + "; ".join(errors))
-    return events
+            continue
+        if isinstance(data, list):
+            rows.extend(item for item in data if isinstance(item, dict))
+    if not rows:
+        raise RuntimeError(
+            "Не удалось загрузить календарь -> " + "; ".join(errors or ["пустой ответ"])
+        )
+    return rows
+
+
+def fetch_forexfactory(feeds=FF_FEEDS) -> list[Event]:
+    return parse_ff_rows(fetch_ff_rows(feeds))
 
 
 def load_static_calendar(path) -> list[Event]:

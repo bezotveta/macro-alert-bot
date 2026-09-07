@@ -22,7 +22,9 @@ from __future__ import annotations
 import argparse
 import json
 import os
+import sys
 import time
+import traceback
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from zoneinfo import ZoneInfo
@@ -52,6 +54,7 @@ def load_config() -> dict:
     cfg.setdefault("include_adp", False)
     cfg.setdefault("disabled_rules", [])
     cfg.setdefault("static_calendars", ["cbr_dates.json"])
+    cfg.setdefault("calendar_cache_minutes", 10)
     return cfg
 
 
@@ -75,8 +78,64 @@ def save_state(state: dict, path: Path = STATE_PATH) -> None:
 
 
 # ------------------------------------------------------------------------ данные
-def collect_events(cfg: dict, fixture: str | None) -> list[providers.Event]:
-    events = providers.load_fixture(fixture) if fixture else providers.fetch_forexfactory()
+def _cache_ttl(cfg: dict, rows, now: datetime) -> int:
+    """Обычно календарь можно не трогать 10 минут, но рядом с релизом нужна свежесть."""
+    for event in providers.parse_ff_rows(rows):
+        if abs((event.dt - now).total_seconds()) <= 25 * 60:
+            return 1
+    return max(1, int(cfg.get("calendar_cache_minutes", 10)))
+
+
+def fetch_calendar_rows(cfg: dict, state: dict, now: datetime) -> list[dict]:
+    """Календарь из сети или из кэша в state.json. Никогда не бросает исключение.
+
+    Фид Forex Factory отвечает 429, если его дёргать часто с одного IP (а у
+    серверов GitHub он общий на всех). Поэтому свежую копию держим в
+    состоянии и переспрашиваем источник не чаще, чем нужно.
+    """
+    cache = state.setdefault("calendar", {})
+    rows = cache.get("rows") or []
+    fetched_at = cache.get("fetched_at")
+    age_min = None
+    if fetched_at:
+        try:
+            age_min = (now - datetime.fromisoformat(fetched_at)).total_seconds() / 60
+        except ValueError:
+            age_min = None
+
+    if rows and age_min is not None and age_min < _cache_ttl(cfg, rows, now):
+        return rows
+
+    try:
+        fresh = providers.fetch_ff_rows()
+    except Exception as exc:  # noqa: BLE001
+        print(f"!! Календарь недоступен: {exc}", file=sys.stderr)
+        cache.setdefault("failed_since", now.isoformat(timespec="seconds"))
+        if rows:
+            print(f"   работаю по копии от {fetched_at}", file=sys.stderr)
+        return rows
+
+    cache["rows"] = fresh
+    cache["fetched_at"] = now.isoformat(timespec="seconds")
+    cache.pop("failed_since", None)
+    cache.pop("warned", None)
+    return fresh
+
+
+def collect_events(
+    cfg: dict,
+    fixture: str | None,
+    state: dict | None = None,
+    now: datetime | None = None,
+) -> list[providers.Event]:
+    if fixture:
+        events = providers.load_fixture(fixture)
+    elif state is None:
+        events = providers.fetch_forexfactory()
+    else:
+        events = providers.parse_ff_rows(
+            fetch_calendar_rows(cfg, state, now or datetime.now(timezone.utc))
+        )
     for name in cfg["static_calendars"]:
         events.extend(providers.load_static_calendar(ROOT / name))
 
@@ -106,8 +165,34 @@ def whitelisted(events, cfg: dict, state: dict):
     return out
 
 
-def _items(cfg, state, fixture):
-    return whitelisted(collect_events(cfg, fixture), cfg, state)
+def _items(cfg, state, fixture, now=None):
+    try:
+        events = collect_events(cfg, fixture, state, now)
+    except Exception as exc:  # noqa: BLE001
+        print(f"!! Не смог собрать события: {exc}", file=sys.stderr)
+        return []
+    return whitelisted(events, cfg, state)
+
+
+def _warn_if_stale(tg, state: dict, now: datetime, day_key: str) -> None:
+    """Если календарь не грузится больше трёх часов — предупреждаем раз в сутки."""
+    cache = state.get("calendar") or {}
+    since = cache.get("failed_since")
+    if not since or cache.get("warned") == day_key:
+        return
+    try:
+        hours = (now - datetime.fromisoformat(since)).total_seconds() / 3600
+    except ValueError:
+        return
+    if hours < 3:
+        return
+    ok = tg.send(
+        "⚠️ <b>Не могу загрузить экономический календарь</b>\n"
+        f"Источник не отвечает уже {int(hours)} ч — напоминания могут не прийти.\n"
+        "Обычно это временная блокировка, пробую снова каждые несколько минут."
+    )
+    if ok:
+        cache["warned"] = day_key
 
 
 def today_text(cfg: dict, state: dict, fixture=None, now=None) -> str:
@@ -162,15 +247,22 @@ def run_once(now: datetime, cfg: dict, state: dict, *, fixture=None, dry=False, 
             "today": lambda: today_text(cfg, state, fixture),
             "week": lambda: week_text(cfg, state, fixture),
         }
-        commands.process(tg, cfg, state, handlers)
+        if commands.process(tg, cfg, state, handlers):
+            # сохраняем сразу: если дальше что-то отвалится, ответы не повторятся
+            save_state(state)
 
-    items = _items(cfg, state, fixture)
+    items = _items(cfg, state, fixture, now)
+    _warn_if_stale(tg, state, now, local_now.strftime("%Y-%m-%d"))
+
+    # если календарь не загрузился — молчим про "спокойный день". Лучше
+    # прислать дайджест позже, когда данные появятся, чем соврать, что релизов нет
+    cal_ok = bool(fixture) or bool((state.get("calendar") or {}).get("rows"))
 
     # 1) утренний дайджест
     d_h, d_m = _hhmm(cfg["daily_digest_at"])
     digest_at = local_now.replace(hour=d_h, minute=d_m, second=0, microsecond=0)
     today_key = local_now.strftime("%Y-%m-%d")
-    if state.get("digest") != today_key and digest_at <= local_now < digest_at + timedelta(hours=4):
+    if cal_ok and state.get("digest") != today_key and digest_at <= local_now < digest_at + timedelta(hours=4):
         today = [
             (e, r, e.dt.astimezone(tz))
             for e, r in items
@@ -187,7 +279,8 @@ def run_once(now: datetime, cfg: dict, state: dict, *, fixture=None, dry=False, 
         week_key = f"{local_now.isocalendar().year}-W{local_now.isocalendar().week}"
         weekly_at = local_now.replace(hour=w_h, minute=w_m, second=0, microsecond=0)
         if (
-            local_now.weekday() == weekly_cfg["weekday"]
+            cal_ok
+            and local_now.weekday() == weekly_cfg["weekday"]
             and state.get("weekly") != week_key
             and weekly_at <= local_now < weekly_at + timedelta(hours=4)
         ):
@@ -281,7 +374,7 @@ def main() -> None:
     parser.add_argument("--once", action="store_true", help="один проход и выход")
     parser.add_argument("--loop", action="store_true", help="бесконечный цикл")
     parser.add_argument("--test", action="store_true", help="офлайн-прогон на тестовых данных")
-    parser.add_argument("--demo", action="store_true", help="показать меню и справку")
+    parser.add_argument("--demo", action="store_true", help="показать меню и сп��авку")
     parser.add_argument("--dry-run", action="store_true", help="печатать в консоль, не шлать в Telegram")
     parser.add_argument("--now", help="подменить текущее время, например 2026-09-11T12:00:00+00:00")
     parser.add_argument("--fixture", help="JSON-файл с событиями вместо загрузки из сети")
@@ -313,8 +406,16 @@ def main() -> None:
     # по умолчанию — один проход
     state = load_state()
     now = datetime.fromisoformat(args.now) if args.now else datetime.now(timezone.utc)
-    count = run_once(now, cfg, state, fixture=args.fixture, dry=args.dry_run)
-    save_state(state)
+    count = 0
+    try:
+        count = run_once(now, cfg, state, fixture=args.fixture, dry=args.dry_run)
+    except Exception:  # noqa: BLE001
+        # Падать нельзя: иначе GitHub не сохранит state.json и бот повторит
+        # уже отправленные сообщения. Печатаем причину и выходим спокойно.
+        traceback.print_exc()
+        print("!! Проход завершён с ошибкой, состояние сохранено", file=sys.stderr)
+    finally:
+        save_state(state)
     print(f"Готово. Сообщений отправлено: {count}")
 
 
