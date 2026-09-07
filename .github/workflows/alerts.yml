@@ -2,8 +2,10 @@ name: macro-alerts
 
 on:
   schedule:
-    # каждые 5 минут; GitHub иногда задерживает запуск на 5–10 минут
-    - cron: "*/5 * * * *"
+    # Раз в час на 17-й минуте: GitHub массово пропускает запуски в начале часа.
+    # Нам достаточно одного удачного старта на 6 часов: сам запуск живёт 5 ч 45 мин,
+    # а лишние срабатывания встают в очередь благодаря concurrency ниже.
+    - cron: "17 * * * *"
   workflow_dispatch:
 
 permissions:
@@ -16,6 +18,7 @@ concurrency:
 jobs:
   run:
     runs-on: ubuntu-latest
+    timeout-minutes: 350
     steps:
       - uses: actions/checkout@v4
 
@@ -27,9 +30,11 @@ jobs:
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-        run: timeout 240 python bot.py --loop --interval 1 || true
+        # держим бота живым 5 ч 45 мин, проверка календаря и команд каждую минуту
+        run: timeout 20700 python bot.py --loop --interval 1 || true
 
       - name: Persist state
+        if: always()
         run: |
           git config user.name "macro-alert-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
