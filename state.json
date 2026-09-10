@@ -1,5 +1,29 @@
 {
- "sent": {},
+ "sent": {
+  "EUR|Main Refinancing Rate|2026-09-10T12:15": [
+   "pre5"
+  ],
+  "EUR|Monetary Policy Statement|2026-09-10T12:15": [
+   "pre5"
+  ],
+  "EUR|ECB Press Conference|2026-09-10T12:45": [
+   "pre30",
+   "pre5"
+  ],
+  "USD|Core PPI m/m|2026-09-10T12:30": [
+   "pre5"
+  ],
+  "USD|PPI m/m|2026-09-10T12:30": [
+   "pre5"
+  ],
+  "USD|Unemployment Claims|2026-09-10T12:30": [
+   "pre5"
+  ],
+  "USD|Crude Oil Inventories|2026-09-10T16:00": [
+   "pre30",
+   "pre5"
+  ]
+ },
  "digest": "2026-09-10",
  "weekly": "",
  "tg_offset": 576148951,
@@ -658,6 +682,6 @@
     "previous": ""
    }
   ],
-  "fetched_at": "2026-09-10T06:22:51+00:00"
+  "fetched_at": "2026-09-10T17:45:23+00:00"
  }
 }
