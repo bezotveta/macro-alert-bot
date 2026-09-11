@@ -22,6 +22,30 @@
   "USD|Crude Oil Inventories|2026-09-10T16:00": [
    "pre30",
    "pre5"
+  ],
+  "USD|Core CPI m/m|2026-09-11T12:30": [
+   "pre30",
+   "pre5"
+  ],
+  "USD|Core CPI y/y|2026-09-11T12:30": [
+   "pre30",
+   "pre5"
+  ],
+  "USD|CPI m/m|2026-09-11T12:30": [
+   "pre30",
+   "pre5"
+  ],
+  "USD|CPI y/y|2026-09-11T12:30": [
+   "pre30",
+   "pre5"
+  ],
+  "USD|Prelim UoM Consumer Sentiment|2026-09-11T14:00": [
+   "pre30",
+   "pre5"
+  ],
+  "USD|Prelim UoM Inflation Expectations|2026-09-11T14:00": [
+   "pre30",
+   "pre5"
   ]
  },
  "digest": "2026-09-10",
@@ -682,6 +706,6 @@
     "previous": ""
    }
   ],
-  "fetched_at": "2026-09-11T05:16:09+00:00"
+  "fetched_at": "2026-09-11T16:45:32+00:00"
  }
 }
