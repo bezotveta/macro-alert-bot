@@ -684,7 +684,7 @@
    {
     "title": "Federal Budget Balance",
     "country": "USD",
-    "date": "2026-09-11T14:00:00-04:00",
+    "date": "2026-09-11T13:58:00-04:00",
     "impact": "Low",
     "forecast": "-221.1B",
     "previous": "-432.3B"
@@ -706,6 +706,6 @@
     "previous": ""
    }
   ],
-  "fetched_at": "2026-09-11T16:45:32+00:00"
+  "fetched_at": "2026-09-12T04:21:27+00:00"
  }
 }
