@@ -46,9 +46,29 @@
   "USD|Prelim UoM Inflation Expectations|2026-09-11T14:00": [
    "pre30",
    "pre5"
+  ],
+  "CAD|CPI m/m|2026-09-14T12:30": [
+   "pre30",
+   "pre5"
+  ],
+  "CAD|Median CPI y/y|2026-09-14T12:30": [
+   "pre30",
+   "pre5"
+  ],
+  "CAD|Trimmed CPI y/y|2026-09-14T12:30": [
+   "pre30",
+   "pre5"
+  ],
+  "CAD|Common CPI y/y|2026-09-14T12:30": [
+   "pre30",
+   "pre5"
+  ],
+  "CAD|Core CPI m/m|2026-09-14T12:30": [
+   "pre30",
+   "pre5"
   ]
  },
- "digest": "2026-09-13",
+ "digest": "2026-09-14",
  "weekly": "",
  "tg_offset": 576148951,
  "prefs": {
@@ -108,7 +128,7 @@
    {
     "title": "M2 Money Supply y/y",
     "country": "CNY",
-    "date": "2026-09-14T04:03:00-04:00",
+    "date": "2026-09-14T05:01:00-04:00",
     "impact": "Low",
     "forecast": "7.6%",
     "previous": "7.7%"
@@ -116,7 +136,7 @@
    {
     "title": "New Loans",
     "country": "CNY",
-    "date": "2026-09-14T04:03:00-04:00",
+    "date": "2026-09-14T05:01:00-04:00",
     "impact": "Low",
     "forecast": "480B",
     "previous": "-340B"
@@ -882,7 +902,7 @@
     "previous": ""
    }
   ],
-  "fetched_at": "2026-09-14T02:21:47+00:00",
-  "failed_since": "2026-09-14T02:22:47+00:00"
+  "fetched_at": "2026-09-14T13:53:14+00:00",
+  "failed_since": "2026-09-14T13:54:15+00:00"
  }
 }
