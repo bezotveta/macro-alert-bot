@@ -218,7 +218,7 @@
     "country": "CNY",
     "date": "2026-09-14T22:00:00-04:00",
     "impact": "Low",
-    "forecast": "-7.0%",
+    "forecast": "-7.1%",
     "previous": "-6.7%"
    },
    {
@@ -242,7 +242,7 @@
     "country": "CNY",
     "date": "2026-09-14T22:00:00-04:00",
     "impact": "Low",
-    "forecast": "0.8%",
+    "forecast": "0.7%",
     "previous": "0.6%"
    },
    {
@@ -290,7 +290,7 @@
     "country": "GBP",
     "date": "2026-09-15T02:00:00-04:00",
     "impact": "Low",
-    "forecast": "4.9%",
+    "forecast": "5.0%",
     "previous": "4.9%"
    },
    {
@@ -330,7 +330,7 @@
     "country": "EUR",
     "date": "2026-09-15T05:00:00-04:00",
     "impact": "Low",
-    "forecast": "42.7",
+    "forecast": "39.8",
     "previous": "34.2"
    },
    {
@@ -338,7 +338,7 @@
     "country": "EUR",
     "date": "2026-09-15T05:00:00-04:00",
     "impact": "Low",
-    "forecast": "39.9",
+    "forecast": "39.2",
     "previous": "31.4"
    },
    {
@@ -548,6 +548,14 @@
     "impact": "Low",
     "forecast": "",
     "previous": "-0.4M"
+   },
+   {
+    "title": "German Buba President Nagel Speaks",
+    "country": "EUR",
+    "date": "2026-09-16T12:00:00-04:00",
+    "impact": "Low",
+    "forecast": "",
+    "previous": ""
    },
    {
     "title": "BOC Summary of Deliberations",
@@ -902,7 +910,6 @@
     "previous": ""
    }
   ],
-  "fetched_at": "2026-09-14T13:53:14+00:00",
-  "failed_since": "2026-09-14T13:54:15+00:00"
+  "fetched_at": "2026-09-14T19:51:02+00:00"
  }
 }
