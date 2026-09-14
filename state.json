@@ -98,14 +98,6 @@
     "previous": "0.1%"
    },
    {
-    "title": "Foreign Direct Investment ytd/y",
-    "country": "CNY",
-    "date": "2026-09-14T02:02:00-04:00",
-    "impact": "Low",
-    "forecast": "",
-    "previous": "-6.2%"
-   },
-   {
     "title": "PPI m/m",
     "country": "CHF",
     "date": "2026-09-14T02:30:00-04:00",
@@ -184,6 +176,14 @@
     "impact": "Low",
     "forecast": "",
     "previous": "-0.4%"
+   },
+   {
+    "title": "ECB President Lagarde Speaks",
+    "country": "EUR",
+    "date": "2026-09-14T11:15:00-04:00",
+    "impact": "Medium",
+    "forecast": "",
+    "previous": ""
    },
    {
     "title": "New Home Prices m/m",
@@ -272,6 +272,14 @@
     "impact": "Low",
     "forecast": "4.9%",
     "previous": "4.9%"
+   },
+   {
+    "title": "Foreign Direct Investment ytd/y",
+    "country": "CNY",
+    "date": "2026-09-15T02:02:00-04:00",
+    "impact": "Low",
+    "forecast": "",
+    "previous": "-6.2%"
    },
    {
     "title": "French Final CPI m/m",
@@ -534,7 +542,7 @@
     "country": "USD",
     "date": "2026-09-16T14:00:00-04:00",
     "impact": "High",
-    "forecast": "",
+    "forecast": "4.00%",
     "previous": "3.75%"
    },
    {
@@ -802,6 +810,30 @@
     "previous": "35.1B"
    },
    {
+    "title": "Eurogroup Meetings",
+    "country": "EUR",
+    "date": "2026-09-18T06:15:00-04:00",
+    "impact": "Low",
+    "forecast": "",
+    "previous": ""
+   },
+   {
+    "title": "ECOFIN Meetings",
+    "country": "EUR",
+    "date": "2026-09-18T06:15:00-04:00",
+    "impact": "Low",
+    "forecast": "",
+    "previous": ""
+   },
+   {
+    "title": "ECB President Lagarde Speaks",
+    "country": "EUR",
+    "date": "2026-09-18T06:30:00-04:00",
+    "impact": "Medium",
+    "forecast": "",
+    "previous": ""
+   },
+   {
     "title": "Capacity Utilization Rate",
     "country": "USD",
     "date": "2026-09-18T09:15:00-04:00",
@@ -832,8 +864,25 @@
     "impact": "Low",
     "forecast": "0.2%",
     "previous": "0.2%"
+   },
+   {
+    "title": "FOMC Member Schmid Speaks",
+    "country": "USD",
+    "date": "2026-09-18T11:45:00-04:00",
+    "impact": "Low",
+    "forecast": "",
+    "previous": ""
+   },
+   {
+    "title": "ECOFIN Meetings",
+    "country": "EUR",
+    "date": "2026-09-19T06:15:00-04:00",
+    "impact": "Low",
+    "forecast": "",
+    "previous": ""
    }
   ],
-  "fetched_at": "2026-09-13T14:48:44+00:00"
+  "fetched_at": "2026-09-14T02:21:47+00:00",
+  "failed_since": "2026-09-14T02:22:47+00:00"
  }
 }
