@@ -66,9 +66,17 @@
   "CAD|Core CPI m/m|2026-09-14T12:30": [
    "pre30",
    "pre5"
+  ],
+  "GBP|Claimant Count Change|2026-09-15T06:00": [
+   "pre30",
+   "pre5"
+  ],
+  "GBP|Average Earnings Index 3m/y|2026-09-15T06:00": [
+   "pre30",
+   "pre5"
   ]
  },
- "digest": "2026-09-14",
+ "digest": "2026-09-15",
  "weekly": "",
  "tg_offset": 576148951,
  "prefs": {
@@ -294,14 +302,6 @@
     "previous": "4.9%"
    },
    {
-    "title": "Foreign Direct Investment ytd/y",
-    "country": "CNY",
-    "date": "2026-09-15T02:02:00-04:00",
-    "impact": "Low",
-    "forecast": "",
-    "previous": "-6.2%"
-   },
-   {
     "title": "French Final CPI m/m",
     "country": "EUR",
     "date": "2026-09-15T02:45:00-04:00",
@@ -362,7 +362,7 @@
     "country": "USD",
     "date": "2026-09-15T08:30:00-04:00",
     "impact": "Low",
-    "forecast": "14.1",
+    "forecast": "14.8",
     "previous": "20.6"
    },
    {
@@ -394,7 +394,7 @@
     "country": "NZD",
     "date": "2026-09-15T18:45:00-04:00",
     "impact": "Low",
-    "forecast": "-2.37B",
+    "forecast": "-2.57B",
     "previous": "-1.01B"
    },
    {
@@ -402,7 +402,7 @@
     "country": "JPY",
     "date": "2026-09-15T19:50:00-04:00",
     "impact": "Low",
-    "forecast": "-1.1%",
+    "forecast": "-1.2%",
     "previous": "9.7%"
    },
    {
@@ -410,7 +410,7 @@
     "country": "JPY",
     "date": "2026-09-15T19:50:00-04:00",
     "impact": "Low",
-    "forecast": "-0.98T",
+    "forecast": "-1.00T",
     "previous": "-0.69T"
    },
    {
@@ -442,7 +442,7 @@
     "country": "GBP",
     "date": "2026-09-16T02:00:00-04:00",
     "impact": "Low",
-    "forecast": "-0.6%",
+    "forecast": "0.6%",
     "previous": "-1.7%"
    },
    {
@@ -450,7 +450,7 @@
     "country": "GBP",
     "date": "2026-09-16T02:00:00-04:00",
     "impact": "Low",
-    "forecast": "0.1%",
+    "forecast": "0.5%",
     "previous": "0.2%"
    },
    {
@@ -474,7 +474,7 @@
     "country": "EUR",
     "date": "2026-09-16T05:00:00-04:00",
     "impact": "Low",
-    "forecast": "-0.5%",
+    "forecast": "-0.2%",
     "previous": "0.0%"
    },
    {
@@ -490,7 +490,7 @@
     "country": "CAD",
     "date": "2026-09-16T08:15:00-04:00",
     "impact": "Low",
-    "forecast": "239K",
+    "forecast": "243K",
     "previous": "229K"
    },
    {
@@ -498,7 +498,7 @@
     "country": "CAD",
     "date": "2026-09-16T08:30:00-04:00",
     "impact": "Low",
-    "forecast": "-5.8%",
+    "forecast": "-4.5%",
     "previous": "18.5%"
    },
    {
@@ -522,7 +522,7 @@
     "country": "USD",
     "date": "2026-09-16T08:30:00-04:00",
     "impact": "Low",
-    "forecast": "0.0%",
+    "forecast": "0.4%",
     "previous": "-0.4%"
    },
    {
@@ -530,7 +530,7 @@
     "country": "USD",
     "date": "2026-09-16T10:00:00-04:00",
     "impact": "Low",
-    "forecast": "0.3%",
+    "forecast": "0.6%",
     "previous": "0.0%"
    },
    {
@@ -614,6 +614,14 @@
     "previous": "0.8%"
    },
    {
+    "title": "Foreign Direct Investment ytd/y",
+    "country": "CNY",
+    "date": "2026-09-17T02:02:00-04:00",
+    "impact": "Low",
+    "forecast": "",
+    "previous": "-6.2%"
+   },
+   {
     "title": "SECO Economic Forecasts",
     "country": "CHF",
     "date": "2026-09-17T03:00:00-04:00",
@@ -682,7 +690,7 @@
     "country": "CAD",
     "date": "2026-09-17T08:30:00-04:00",
     "impact": "Low",
-    "forecast": "0.3%",
+    "forecast": "0.0%",
     "previous": "0.6%"
    },
    {
@@ -690,7 +698,7 @@
     "country": "CAD",
     "date": "2026-09-17T08:30:00-04:00",
     "impact": "Low",
-    "forecast": "-0.8%",
+    "forecast": "0.7%",
     "previous": "-2.2%"
    },
    {
@@ -698,7 +706,7 @@
     "country": "USD",
     "date": "2026-09-17T08:30:00-04:00",
     "impact": "Medium",
-    "forecast": "28.9",
+    "forecast": "31.3",
     "previous": "47.4"
    },
    {
@@ -706,7 +714,7 @@
     "country": "USD",
     "date": "2026-09-17T08:30:00-04:00",
     "impact": "Medium",
-    "forecast": "209K",
+    "forecast": "208K",
     "previous": "206K"
    },
    {
@@ -722,7 +730,7 @@
     "country": "USD",
     "date": "2026-09-17T08:30:00-04:00",
     "impact": "Low",
-    "forecast": "1.32M",
+    "forecast": "1.31M",
     "previous": "1.24M"
    },
    {
@@ -730,7 +738,7 @@
     "country": "USD",
     "date": "2026-09-17T10:00:00-04:00",
     "impact": "Low",
-    "forecast": "0.3%",
+    "forecast": "-0.2%",
     "previous": "-2.3%"
    },
    {
@@ -762,7 +770,7 @@
     "country": "NZD",
     "date": "2026-09-17T18:45:00-04:00",
     "impact": "Low",
-    "forecast": "-1275M",
+    "forecast": "-1775M",
     "previous": "-1949M"
    },
    {
@@ -874,7 +882,7 @@
     "country": "USD",
     "date": "2026-09-18T09:15:00-04:00",
     "impact": "Low",
-    "forecast": "0.1%",
+    "forecast": "0.3%",
     "previous": "0.2%"
    },
    {
@@ -890,7 +898,7 @@
     "country": "USD",
     "date": "2026-09-18T10:00:00-04:00",
     "impact": "Low",
-    "forecast": "0.2%",
+    "forecast": "0.1%",
     "previous": "0.2%"
    },
    {
@@ -910,6 +918,6 @@
     "previous": ""
    }
   ],
-  "fetched_at": "2026-09-14T19:51:02+00:00"
+  "fetched_at": "2026-09-15T07:18:59+00:00"
  }
 }
