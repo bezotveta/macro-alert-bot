@@ -366,9 +366,17 @@
     "previous": "20.6"
    },
    {
+    "title": "Treasury Sec Bessent Speaks",
+    "country": "USD",
+    "date": "2026-09-15T10:00:00-04:00",
+    "impact": "Medium",
+    "forecast": "",
+    "previous": ""
+   },
+   {
     "title": "GDT Price Index",
     "country": "NZD",
-    "date": "2026-09-15T10:50:00-04:00",
+    "date": "2026-09-15T11:39:00-04:00",
     "impact": "Low",
     "forecast": "",
     "previous": "0.9%"
@@ -918,6 +926,6 @@
     "previous": ""
    }
   ],
-  "fetched_at": "2026-09-15T13:24:21+00:00"
+  "fetched_at": "2026-09-15T19:19:45+00:00"
  }
 }
