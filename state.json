@@ -82,6 +82,25 @@
   "GBP|Core CPI y/y|2026-09-16T06:00": [
    "pre30",
    "pre5"
+  ],
+  "USD|Crude Oil Inventories|2026-09-16T14:30": [
+   "pre30",
+   "pre5"
+  ],
+  "USD|Federal Funds Rate|2026-09-16T18:00": [
+   "pre30",
+   "pre5"
+  ],
+  "USD|FOMC Economic Projections|2026-09-16T18:00": [
+   "pre30",
+   "pre5"
+  ],
+  "USD|FOMC Statement|2026-09-16T18:00": [
+   "pre30",
+   "pre5"
+  ],
+  "USD|FOMC Press Conference|2026-09-16T18:30": [
+   "pre30"
   ]
  },
  "digest": "2026-09-16",
@@ -496,7 +515,7 @@
    {
     "title": "German 30-y Bond Auction",
     "country": "EUR",
-    "date": "2026-09-16T05:34:00-04:00",
+    "date": "2026-09-16T05:35:00-04:00",
     "impact": "Low",
     "forecast": "",
     "previous": "3.65|1.3"
@@ -934,6 +953,7 @@
     "previous": ""
    }
   ],
-  "fetched_at": "2026-09-16T06:44:37+00:00"
+  "fetched_at": "2026-09-16T18:18:49+00:00",
+  "failed_since": "2026-09-16T18:19:53+00:00"
  }
 }
