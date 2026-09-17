@@ -649,14 +649,6 @@
     "previous": "0.8%"
    },
    {
-    "title": "Foreign Direct Investment ytd/y",
-    "country": "CNY",
-    "date": "2026-09-17T02:02:00-04:00",
-    "impact": "Low",
-    "forecast": "",
-    "previous": "-6.2%"
-   },
-   {
     "title": "SECO Economic Forecasts",
     "country": "CHF",
     "date": "2026-09-17T03:00:00-04:00",
@@ -873,6 +865,14 @@
     "previous": "-0.5%"
    },
    {
+    "title": "Foreign Direct Investment ytd/y",
+    "country": "CNY",
+    "date": "2026-09-18T02:02:00-04:00",
+    "impact": "Low",
+    "forecast": "",
+    "previous": "-6.2%"
+   },
+   {
     "title": "Current Account",
     "country": "EUR",
     "date": "2026-09-18T04:00:00-04:00",
@@ -953,7 +953,6 @@
     "previous": ""
    }
   ],
-  "fetched_at": "2026-09-16T18:18:49+00:00",
-  "failed_since": "2026-09-16T18:19:53+00:00"
+  "fetched_at": "2026-09-17T05:49:43+00:00"
  }
 }
