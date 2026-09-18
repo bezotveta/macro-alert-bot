@@ -105,6 +105,17 @@
   "USD|Unemployment Claims|2026-09-17T12:30": [
    "pre30",
    "pre5"
+  ],
+  "JPY|National Core CPI y/y|2026-09-17T23:30": [
+   "pre5"
+  ],
+  "JPY|BOJ Policy Rate|2026-09-18T03:00": [
+   "pre30",
+   "pre5"
+  ],
+  "JPY|Monetary Policy Statement|2026-09-18T03:00": [
+   "pre30",
+   "pre5"
   ]
  },
  "digest": "2026-09-16",
@@ -725,6 +736,14 @@
     "previous": "0.6%"
    },
    {
+    "title": "NHPI m/m",
+    "country": "CAD",
+    "date": "2026-09-17T08:30:00-04:00",
+    "impact": "Low",
+    "forecast": "",
+    "previous": "-0.1%"
+   },
+   {
     "title": "RMPI m/m",
     "country": "CAD",
     "date": "2026-09-17T08:30:00-04:00",
@@ -805,14 +824,6 @@
     "previous": "-1949M"
    },
    {
-    "title": "GfK Consumer Confidence",
-    "country": "GBP",
-    "date": "2026-09-17T19:01:00-04:00",
-    "impact": "Low",
-    "forecast": "-16",
-    "previous": "-14"
-   },
-   {
     "title": "RBA Gov Bullock Speaks",
     "country": "AUD",
     "date": "2026-09-17T19:30:00-04:00",
@@ -831,7 +842,7 @@
    {
     "title": "BOJ Policy Rate",
     "country": "JPY",
-    "date": "2026-09-17T22:30:00-04:00",
+    "date": "2026-09-17T22:54:00-04:00",
     "impact": "High",
     "forecast": "<1.25%",
     "previous": "<1.00%"
@@ -839,7 +850,7 @@
    {
     "title": "Monetary Policy Statement",
     "country": "JPY",
-    "date": "2026-09-17T22:30:00-04:00",
+    "date": "2026-09-17T22:54:00-04:00",
     "impact": "High",
     "forecast": "",
     "previous": ""
@@ -957,6 +968,6 @@
     "previous": ""
    }
   ],
-  "fetched_at": "2026-09-17T17:15:04+00:00"
+  "fetched_at": "2026-09-18T04:44:47+00:00"
  }
 }
