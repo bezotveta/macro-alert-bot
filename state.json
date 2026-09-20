@@ -974,8 +974,24 @@
     "impact": "Low",
     "forecast": "",
     "previous": ""
+   },
+   {
+    "title": "1-y Loan Prime Rate",
+    "country": "CNY",
+    "date": "2026-09-19T21:00:00-04:00",
+    "impact": "Low",
+    "forecast": "3.00%",
+    "previous": "3.00%"
+   },
+   {
+    "title": "5-y Loan Prime Rate",
+    "country": "CNY",
+    "date": "2026-09-19T21:00:00-04:00",
+    "impact": "Low",
+    "forecast": "3.50%",
+    "previous": "3.50%"
    }
   ],
-  "fetched_at": "2026-09-19T15:20:31+00:00"
+  "fetched_at": "2026-09-20T02:51:51+00:00"
  }
 }
