@@ -459,8 +459,16 @@
     "country": "USD",
     "date": "2026-09-23T10:30:00-04:00",
     "impact": "Low",
-    "forecast": "-0.6M",
+    "forecast": "-0.7M",
     "previous": "-0.6M"
+   },
+   {
+    "title": "FOMC Member Goolsbee Speaks",
+    "country": "USD",
+    "date": "2026-09-23T12:00:00-04:00",
+    "impact": "Low",
+    "forecast": "",
+    "previous": ""
    },
    {
     "title": "Flash Manufacturing PMI",
@@ -659,7 +667,7 @@
     "country": "USD",
     "date": "2026-09-24T10:30:00-04:00",
     "impact": "Low",
-    "forecast": "52B",
+    "forecast": "50B",
     "previous": "44B"
    },
    {
@@ -743,6 +751,14 @@
     "previous": "1.1%"
    },
    {
+    "title": "FOMC Member Schmid Speaks",
+    "country": "USD",
+    "date": "2026-09-25T09:20:00-04:00",
+    "impact": "Low",
+    "forecast": "",
+    "previous": ""
+   },
+   {
     "title": "Revised UoM Consumer Sentiment",
     "country": "USD",
     "date": "2026-09-25T10:00:00-04:00",
@@ -775,6 +791,6 @@
     "previous": ""
    }
   ],
-  "fetched_at": "2026-09-22T16:43:51+00:00"
+  "fetched_at": "2026-09-23T04:06:41+00:00"
  }
 }
