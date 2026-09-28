@@ -725,20 +725,20 @@
     "previous": "47.1"
    },
    {
+    "title": "Gov Board Member Tschudin Speaks",
+    "country": "CHF",
+    "date": "2026-09-30T10:30:00-04:00",
+    "impact": "Low",
+    "forecast": "",
+    "previous": ""
+   },
+   {
     "title": "Crude Oil Inventories",
     "country": "USD",
     "date": "2026-09-30T10:30:00-04:00",
     "impact": "Low",
     "forecast": "",
     "previous": "3.0M"
-   },
-   {
-    "title": "Gov Board Member Tschudin Speaks",
-    "country": "CHF",
-    "date": "2026-09-30T11:00:00-04:00",
-    "impact": "Low",
-    "forecast": "",
-    "previous": ""
    },
    {
     "title": "FOMC Member Barkin Speaks",
@@ -1217,7 +1217,7 @@
     "country": "USD",
     "date": "2026-10-02T08:30:00-04:00",
     "impact": "High",
-    "forecast": "98K",
+    "forecast": "89K",
     "previous": "162K"
    },
    {
@@ -1233,7 +1233,7 @@
     "country": "USD",
     "date": "2026-10-02T10:00:00-04:00",
     "impact": "Low",
-    "forecast": "-0.1%",
+    "forecast": "0.1%",
     "previous": "0.9%"
    },
    {
@@ -1261,6 +1261,6 @@
     "previous": ""
    }
   ],
-  "fetched_at": "2026-09-28T05:07:06+00:00"
+  "fetched_at": "2026-09-28T16:34:26+00:00"
  }
 }
