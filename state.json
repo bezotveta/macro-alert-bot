@@ -103,7 +103,7 @@
    "pre30"
   ]
  },
- "digest": "2026-09-27",
+ "digest": "2026-09-29",
  "weekly": "2026-W39",
  "tg_offset": 576148957,
  "prefs": {
@@ -249,20 +249,20 @@
     "previous": "6.3B"
    },
    {
-    "title": "Italian 10-y Bond Auction",
-    "country": "EUR",
-    "date": "2026-09-29T05:33:00-04:00",
-    "impact": "Low",
-    "forecast": "",
-    "previous": "4.10|1.6"
-   },
-   {
     "title": "10-y Bond Auction",
     "country": "GBP",
-    "date": "2026-09-29T05:33:00-04:00",
+    "date": "2026-09-29T05:02:00-04:00",
     "impact": "Low",
     "forecast": "",
     "previous": "5.16|3.6"
+   },
+   {
+    "title": "Italian 10-y Bond Auction",
+    "country": "EUR",
+    "date": "2026-09-29T05:04:00-04:00",
+    "impact": "Low",
+    "forecast": "",
+    "previous": "4.10|1.6"
    },
    {
     "title": "German Buba President Nagel Speaks",
@@ -717,7 +717,7 @@
     "country": "USD",
     "date": "2026-09-30T10:30:00-04:00",
     "impact": "Low",
-    "forecast": "",
+    "forecast": "-1.9M",
     "previous": "3.0M"
    },
    {
@@ -1241,7 +1241,7 @@
     "previous": ""
    }
   ],
-  "fetched_at": "2026-09-29T04:06:07+00:00",
-  "failed_since": "2026-09-29T04:07:07+00:00"
+  "fetched_at": "2026-09-29T15:38:19+00:00",
+  "failed_since": "2026-09-29T15:39:19+00:00"
  }
 }
