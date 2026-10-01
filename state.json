@@ -1,32 +1,5 @@
 {
  "sent": {
-  "GBP|CPI y/y|2026-09-16T06:00": [
-   "pre30",
-   "pre5"
-  ],
-  "GBP|Core CPI y/y|2026-09-16T06:00": [
-   "pre30",
-   "pre5"
-  ],
-  "USD|Crude Oil Inventories|2026-09-16T14:30": [
-   "pre30",
-   "pre5"
-  ],
-  "USD|Federal Funds Rate|2026-09-16T18:00": [
-   "pre30",
-   "pre5"
-  ],
-  "USD|FOMC Economic Projections|2026-09-16T18:00": [
-   "pre30",
-   "pre5"
-  ],
-  "USD|FOMC Statement|2026-09-16T18:00": [
-   "pre30",
-   "pre5"
-  ],
-  "USD|FOMC Press Conference|2026-09-16T18:30": [
-   "pre30"
-  ],
   "USD|Unemployment Claims|2026-09-17T12:30": [
    "pre30",
    "pre5"
@@ -95,7 +68,7 @@
    "pre30"
   ]
  },
- "digest": "2026-09-30",
+ "digest": "2026-10-01",
  "weekly": "2026-W39",
  "tg_offset": 576148957,
  "prefs": {
@@ -1197,7 +1170,7 @@
     "country": "USD",
     "date": "2026-10-02T08:30:00-04:00",
     "impact": "High",
-    "forecast": "90K",
+    "forecast": "89K",
     "previous": "162K"
    },
    {
@@ -1241,6 +1214,7 @@
     "previous": ""
    }
   ],
-  "fetched_at": "2026-09-30T20:34:15+00:00"
+  "fetched_at": "2026-10-01T08:05:58+00:00",
+  "failed_since": "2026-10-01T08:06:58+00:00"
  }
 }
