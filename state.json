@@ -1,12 +1,5 @@
 {
  "sent": {
-  "USD|Unemployment Claims|2026-09-17T12:30": [
-   "pre30",
-   "pre5"
-  ],
-  "JPY|National Core CPI y/y|2026-09-17T23:30": [
-   "pre5"
-  ],
   "JPY|BOJ Policy Rate|2026-09-18T03:00": [
    "pre30",
    "pre5"
@@ -68,7 +61,7 @@
    "pre30"
   ]
  },
- "digest": "2026-10-01",
+ "digest": "2026-10-02",
  "weekly": "2026-W39",
  "tg_offset": 576148957,
  "prefs": {
@@ -1086,18 +1079,18 @@
     "previous": ""
    },
    {
-    "title": "FOMC Member Logan Speaks",
-    "country": "USD",
-    "date": "2026-10-01T18:45:00-04:00",
-    "impact": "Low",
-    "forecast": "",
-    "previous": ""
-   },
-   {
     "title": "Bank Holiday",
     "country": "CNY",
     "date": "2026-10-01T19:01:00-04:00",
     "impact": "Holiday",
+    "forecast": "",
+    "previous": ""
+   },
+   {
+    "title": "FOMC Member Logan Speaks",
+    "country": "USD",
+    "date": "2026-10-01T19:20:00-04:00",
+    "impact": "Low",
     "forecast": "",
     "previous": ""
    },
@@ -1214,7 +1207,7 @@
     "previous": ""
    }
   ],
-  "fetched_at": "2026-10-01T19:36:58+00:00",
-  "failed_since": "2026-10-01T19:37:58+00:00"
+  "fetched_at": "2026-10-02T07:08:17+00:00",
+  "failed_since": "2026-10-02T07:09:17+00:00"
  }
 }
