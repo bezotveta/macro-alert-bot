@@ -1,16 +1,5 @@
 {
  "sent": {
-  "USD|FOMC Member Williams Speaks|2026-09-22T14:05": [
-   "pre30",
-   "pre5"
-  ],
-  "USD|FOMC Member Jefferson Speaks|2026-09-22T14:20": [
-   "pre30",
-   "pre5"
-  ],
-  "USD|FOMC Member Barkin Speaks|2026-09-22T17:00": [
-   "pre30"
-  ],
   "USD|Flash Manufacturing PMI|2026-09-23T13:45": [
    "pre30",
    "pre5"
@@ -41,7 +30,7 @@
    "pre30"
   ]
  },
- "digest": "2026-10-05",
+ "digest": "2026-10-07",
  "weekly": "2026-W40",
  "tg_offset": 576148957,
  "prefs": {
@@ -443,6 +432,14 @@
     "previous": "0.9M"
    },
    {
+    "title": "President Trump Speaks",
+    "country": "USD",
+    "date": "2026-10-07T13:00:00-04:00",
+    "impact": "Medium",
+    "forecast": "",
+    "previous": ""
+   },
+   {
     "title": "10-y Bond Auction",
     "country": "USD",
     "date": "2026-10-07T13:01:00-04:00",
@@ -707,7 +704,6 @@
     "previous": ""
    }
   ],
-  "fetched_at": "2026-10-06T22:53:11+00:00",
-  "failed_since": "2026-10-06T22:54:12+00:00"
+  "fetched_at": "2026-10-07T10:25:47+00:00"
  }
 }
