@@ -1,24 +1,5 @@
 {
  "sent": {
-  "USD|Flash Manufacturing PMI|2026-09-23T13:45": [
-   "pre30",
-   "pre5"
-  ],
-  "USD|Flash Services PMI|2026-09-23T13:45": [
-   "pre30",
-   "pre5"
-  ],
-  "USD|FOMC Member Barr Speaks|2026-09-23T14:05": [
-   "pre30",
-   "pre5"
-  ],
-  "USD|Crude Oil Inventories|2026-09-23T14:30": [
-   "pre30",
-   "pre5"
-  ],
-  "USD|FOMC Member Goolsbee Speaks|2026-09-23T16:00": [
-   "pre30"
-  ],
   "AUD|Employment Change|2026-09-24T01:30": [
    "pre30",
    "pre5"
@@ -30,7 +11,7 @@
    "pre30"
   ]
  },
- "digest": "2026-10-07",
+ "digest": "2026-10-08",
  "weekly": "2026-W40",
  "tg_offset": 576148957,
  "prefs": {
@@ -536,6 +517,14 @@
     "previous": ""
    },
    {
+    "title": "MPC Member Pill Speaks",
+    "country": "GBP",
+    "date": "2026-10-08T05:00:00-04:00",
+    "impact": "Low",
+    "forecast": "",
+    "previous": ""
+   },
+   {
     "title": "MPC Member Greene Speaks",
     "country": "GBP",
     "date": "2026-10-08T05:15:00-04:00",
@@ -547,14 +536,6 @@
     "title": "Eurogroup Meetings",
     "country": "EUR",
     "date": "2026-10-08T05:15:00-04:00",
-    "impact": "Low",
-    "forecast": "",
-    "previous": ""
-   },
-   {
-    "title": "MPC Member Pill Speaks",
-    "country": "GBP",
-    "date": "2026-10-08T06:30:00-04:00",
     "impact": "Low",
     "forecast": "",
     "previous": ""
@@ -704,6 +685,6 @@
     "previous": ""
    }
   ],
-  "fetched_at": "2026-10-07T22:15:22+00:00"
+  "fetched_at": "2026-10-08T09:48:18+00:00"
  }
 }
