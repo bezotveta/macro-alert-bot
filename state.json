@@ -1,17 +1,6 @@
 {
- "sent": {
-  "AUD|Employment Change|2026-09-24T01:30": [
-   "pre30",
-   "pre5"
-  ],
-  "USD|Unemployment Claims|2026-09-24T12:30": [
-   "pre30"
-  ],
-  "USD|FOMC Member Barkin Speaks|2026-09-24T12:30": [
-   "pre30"
-  ]
- },
- "digest": "2026-10-08",
+ "sent": {},
+ "digest": "2026-10-09",
  "weekly": "2026-W40",
  "tg_offset": 576148957,
  "prefs": {
@@ -685,6 +674,7 @@
     "previous": ""
    }
   ],
-  "fetched_at": "2026-10-08T22:16:11+00:00"
+  "fetched_at": "2026-10-09T09:38:01+00:00",
+  "failed_since": "2026-10-09T09:39:01+00:00"
  }
 }
