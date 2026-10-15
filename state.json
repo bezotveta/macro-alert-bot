@@ -1,6 +1,6 @@
 {
  "sent": {},
- "digest": "2026-10-14",
+ "digest": "2026-10-15",
  "weekly": "2026-W41",
  "tg_offset": 576148957,
  "prefs": {
@@ -468,7 +468,7 @@
    {
     "title": "RBA Annual Report",
     "country": "AUD",
-    "date": "2026-10-15T00:25:00-04:00",
+    "date": "2026-10-15T00:30:00-04:00",
     "impact": "Low",
     "forecast": "",
     "previous": ""
@@ -702,7 +702,7 @@
     "country": "USD",
     "date": "2026-10-15T12:00:00-04:00",
     "impact": "Low",
-    "forecast": "-0.2M",
+    "forecast": "0.2M",
     "previous": "-3.2M"
    },
    {
@@ -898,6 +898,6 @@
     "previous": ""
    }
   ],
-  "fetched_at": "2026-10-14T22:15:23+00:00"
+  "fetched_at": "2026-10-15T09:51:52+00:00"
  }
 }
