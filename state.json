@@ -1,6 +1,6 @@
 {
  "sent": {},
- "digest": "2026-10-20",
+ "digest": "2026-10-21",
  "weekly": "2026-W42",
  "tg_offset": 576148957,
  "prefs": {
@@ -394,14 +394,6 @@
     "previous": "1.4%"
    },
    {
-    "title": "Foreign Direct Investment ytd/y",
-    "country": "CNY",
-    "date": "2026-10-21T05:10:00-04:00",
-    "impact": "Low",
-    "forecast": "",
-    "previous": "-5.3%"
-   },
-   {
     "title": "German Buba Monthly Report",
     "country": "EUR",
     "date": "2026-10-21T06:00:00-04:00",
@@ -440,6 +432,14 @@
     "impact": "Low",
     "forecast": "",
     "previous": ""
+   },
+   {
+    "title": "Foreign Direct Investment ytd/y",
+    "country": "CNY",
+    "date": "2026-10-22T05:10:00-04:00",
+    "impact": "Low",
+    "forecast": "",
+    "previous": "-5.3%"
    },
    {
     "title": "CBI Industrial Order Expectations",
@@ -698,6 +698,6 @@
     "previous": ""
    }
   ],
-  "fetched_at": "2026-10-20T22:15:15+00:00"
+  "fetched_at": "2026-10-21T09:45:04+00:00"
  }
 }
