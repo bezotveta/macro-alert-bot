@@ -1,6 +1,6 @@
 {
  "sent": {},
- "digest": "2026-10-21",
+ "digest": "2026-10-22",
  "weekly": "2026-W42",
  "tg_offset": 576148957,
  "prefs": {
@@ -436,7 +436,7 @@
    {
     "title": "Foreign Direct Investment ytd/y",
     "country": "CNY",
-    "date": "2026-10-22T05:10:00-04:00",
+    "date": "2026-10-22T03:41:00-04:00",
     "impact": "Low",
     "forecast": "",
     "previous": "-5.3%"
@@ -698,6 +698,6 @@
     "previous": ""
    }
   ],
-  "fetched_at": "2026-10-21T21:13:26+00:00"
+  "fetched_at": "2026-10-22T08:43:17+00:00"
  }
 }
