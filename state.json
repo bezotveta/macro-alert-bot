@@ -1,6 +1,6 @@
 {
  "sent": {},
- "digest": "2026-10-27",
+ "digest": "2026-10-28",
  "weekly": "2026-W43",
  "tg_offset": 576148957,
  "prefs": {
@@ -236,7 +236,7 @@
    {
     "title": "German 10-y Bond Auction",
     "country": "EUR",
-    "date": "2026-10-28T05:42:00-04:00",
+    "date": "2026-10-28T06:32:00-04:00",
     "impact": "Low",
     "forecast": "",
     "previous": "3.58|1.2"
@@ -318,7 +318,7 @@
     "country": "USD",
     "date": "2026-10-28T10:30:00-04:00",
     "impact": "Low",
-    "forecast": "-0.1M",
+    "forecast": "0.1M",
     "previous": "-3.1M"
    },
    {
@@ -430,7 +430,7 @@
     "country": "USD",
     "date": "2026-10-29T08:30:00-04:00",
     "impact": "Medium",
-    "forecast": "3.3%",
+    "forecast": "3.2%",
     "previous": "6.2%"
    },
    {
@@ -494,7 +494,7 @@
     "country": "USD",
     "date": "2026-10-29T10:30:00-04:00",
     "impact": "Low",
-    "forecast": "",
+    "forecast": "75B",
     "previous": "77B"
    },
    {
@@ -630,7 +630,7 @@
     "country": "GBP",
     "date": "2026-10-30T03:00:00-04:00",
     "impact": "Low",
-    "forecast": "-0.1%",
+    "forecast": "-0.2%",
     "previous": "-0.2%"
    },
    {
@@ -786,6 +786,6 @@
     "previous": "50.2"
    }
   ],
-  "fetched_at": "2026-10-28T02:32:21+00:00"
+  "fetched_at": "2026-10-28T15:24:30+00:00"
  }
 }
