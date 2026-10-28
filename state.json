@@ -1,5 +1,18 @@
 {
- "sent": {},
+ "sent": {
+  "USD|Federal Funds Rate|2026-10-28T18:00": [
+   "pre30",
+   "pre5"
+  ],
+  "USD|FOMC Statement|2026-10-28T18:00": [
+   "pre30",
+   "pre5"
+  ],
+  "USD|FOMC Press Conference|2026-10-28T18:30": [
+   "pre30",
+   "pre5"
+  ]
+ },
  "digest": "2026-10-28",
  "weekly": "2026-W43",
  "tg_offset": 576148957,
@@ -786,6 +799,6 @@
     "previous": "50.2"
    }
   ],
-  "fetched_at": "2026-10-28T15:24:30+00:00"
+  "fetched_at": "2026-10-28T22:16:19+00:00"
  }
 }
