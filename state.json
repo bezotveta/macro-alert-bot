@@ -417,7 +417,7 @@
    {
     "title": "Italian 10-y Bond Auction",
     "country": "EUR",
-    "date": "2026-10-29T05:33:00-04:00",
+    "date": "2026-10-29T06:08:00-04:00",
     "impact": "Low",
     "forecast": "",
     "previous": "4.58|1.6"
@@ -799,6 +799,6 @@
     "previous": "50.2"
    }
   ],
-  "fetched_at": "2026-10-29T09:55:03+00:00"
+  "fetched_at": "2026-10-29T21:55:42+00:00"
  }
 }
