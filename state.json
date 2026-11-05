@@ -15,9 +15,21 @@
   "JPY|BOJ Press Conference|2026-10-30T05:30": [
    "pre30",
    "pre5"
+  ],
+  "GBP|Monetary Policy Summary|2026-11-05T12:00": [
+   "pre30",
+   "pre5"
+  ],
+  "GBP|MPC Official Bank Rate Votes|2026-11-05T12:00": [
+   "pre30",
+   "pre5"
+  ],
+  "GBP|Official Bank Rate|2026-11-05T12:00": [
+   "pre30",
+   "pre5"
   ]
  },
- "digest": "2026-11-04",
+ "digest": "2026-11-05",
  "weekly": "2026-W44",
  "tg_offset": 576148957,
  "prefs": {
@@ -603,17 +615,9 @@
     "previous": "46.1"
    },
    {
-    "title": "PPI m/m",
-    "country": "EUR",
-    "date": "2026-11-05T05:00:00-05:00",
-    "impact": "Low",
-    "forecast": "2.5%",
-    "previous": "1.9%"
-   },
-   {
     "title": "Spanish 10-y Bond Auction",
     "country": "EUR",
-    "date": "2026-11-05T05:03:00-05:00",
+    "date": "2026-11-05T04:39:00-05:00",
     "impact": "Low",
     "forecast": "",
     "previous": "4.18|1.6"
@@ -621,10 +625,18 @@
    {
     "title": "French 10-y Bond Auction",
     "country": "EUR",
-    "date": "2026-11-05T05:18:00-05:00",
+    "date": "2026-11-05T04:55:00-05:00",
     "impact": "Low",
     "forecast": "",
     "previous": "4.93|2.0"
+   },
+   {
+    "title": "PPI m/m",
+    "country": "EUR",
+    "date": "2026-11-05T05:00:00-05:00",
+    "impact": "Low",
+    "forecast": "2.5%",
+    "previous": "1.9%"
    },
    {
     "title": "Challenger Job Cuts y/y",
@@ -947,7 +959,6 @@
     "previous": ""
    }
   ],
-  "fetched_at": "2026-11-04T23:41:56+00:00",
-  "failed_since": "2026-11-04T23:42:57+00:00"
+  "fetched_at": "2026-11-05T12:38:45+00:00"
  }
 }
