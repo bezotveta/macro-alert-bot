@@ -27,9 +27,17 @@
   "GBP|Official Bank Rate|2026-11-05T12:00": [
    "pre30",
    "pre5"
+  ],
+  "USD|Non-Farm Employment Change|2026-11-06T13:30": [
+   "pre30",
+   "pre5"
+  ],
+  "USD|Unemployment Rate|2026-11-06T13:30": [
+   "pre30",
+   "pre5"
   ]
  },
- "digest": "2026-11-05",
+ "digest": "2026-11-06",
  "weekly": "2026-W44",
  "tg_offset": 576148957,
  "prefs": {
@@ -943,6 +951,14 @@
     "previous": ""
    },
    {
+    "title": "FOMC Member Daly Speaks",
+    "country": "USD",
+    "date": "2026-11-06T13:00:00-05:00",
+    "impact": "Low",
+    "forecast": "",
+    "previous": ""
+   },
+   {
     "title": "Consumer Credit m/m",
     "country": "USD",
     "date": "2026-11-06T15:00:00-05:00",
@@ -959,6 +975,6 @@
     "previous": ""
    }
   ],
-  "fetched_at": "2026-11-06T03:46:45+00:00"
+  "fetched_at": "2026-11-06T16:44:12+00:00"
  }
 }
