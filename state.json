@@ -37,7 +37,7 @@
    "pre5"
   ]
  },
- "digest": "2026-11-09",
+ "digest": "2026-11-10",
  "weekly": "2026-W45",
  "tg_offset": 576148957,
  "prefs": {
@@ -215,20 +215,20 @@
     "previous": "-13"
    },
    {
-    "title": "Trade Balance",
-    "country": "CNY",
-    "date": "2026-11-09T22:03:00-05:00",
-    "impact": "Low",
-    "forecast": "855B",
-    "previous": "906B"
-   },
-   {
     "title": "USD-Denominated Trade Balance",
     "country": "CNY",
-    "date": "2026-11-09T22:04:00-05:00",
+    "date": "2026-11-09T21:32:00-05:00",
     "impact": "Low",
     "forecast": "126.5B",
     "previous": "133.5B"
+   },
+   {
+    "title": "Trade Balance",
+    "country": "CNY",
+    "date": "2026-11-09T21:33:00-05:00",
+    "impact": "Low",
+    "forecast": "855B",
+    "previous": "906B"
    },
    {
     "title": "30-y Bond Auction",
@@ -887,7 +887,6 @@
     "previous": ""
    }
   ],
-  "fetched_at": "2026-11-10T00:32:32+00:00",
-  "failed_since": "2026-11-10T00:33:32+00:00"
+  "fetched_at": "2026-11-10T07:54:12+00:00"
  }
 }
