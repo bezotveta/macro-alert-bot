@@ -579,22 +579,6 @@
     "previous": ""
    },
    {
-    "title": "M2 Money Supply y/y",
-    "country": "CNY",
-    "date": "2026-11-12T04:03:00-05:00",
-    "impact": "Low",
-    "forecast": "7.2%",
-    "previous": "7.2%"
-   },
-   {
-    "title": "New Loans",
-    "country": "CNY",
-    "date": "2026-11-12T04:03:00-05:00",
-    "impact": "Low",
-    "forecast": "80B",
-    "previous": "1080B"
-   },
-   {
     "title": "Building Permits m/m",
     "country": "CAD",
     "date": "2026-11-12T08:30:00-05:00",
@@ -635,14 +619,6 @@
     "previous": ""
    },
    {
-    "title": "Mortgage Delinquencies",
-    "country": "USD",
-    "date": "2026-11-12T10:00:00-05:00",
-    "impact": "Low",
-    "forecast": "",
-    "previous": "4.37%"
-   },
-   {
     "title": "CB Leading Index m/m",
     "country": "AUD",
     "date": "2026-11-12T10:30:00-05:00",
@@ -673,6 +649,14 @@
     "impact": "Low",
     "forecast": "",
     "previous": ""
+   },
+   {
+    "title": "Mortgage Delinquencies",
+    "country": "USD",
+    "date": "2026-11-12T12:59:00-05:00",
+    "impact": "Low",
+    "forecast": "",
+    "previous": "4.37%"
    },
    {
     "title": "30-y Bond Auction",
@@ -787,6 +771,22 @@
     "previous": "-6.8B"
    },
    {
+    "title": "M2 Money Supply y/y",
+    "country": "CNY",
+    "date": "2026-11-13T05:03:00-05:00",
+    "impact": "Low",
+    "forecast": "7.2%",
+    "previous": "7.2%"
+   },
+   {
+    "title": "New Loans",
+    "country": "CNY",
+    "date": "2026-11-13T05:03:00-05:00",
+    "impact": "Low",
+    "forecast": "80B",
+    "previous": "1080B"
+   },
+   {
     "title": "Manufacturing Sales m/m",
     "country": "CAD",
     "date": "2026-11-13T08:30:00-05:00",
@@ -891,6 +891,6 @@
     "previous": ""
    }
   ],
-  "fetched_at": "2026-11-12T04:24:10+00:00"
+  "fetched_at": "2026-11-12T18:32:34+00:00"
  }
 }
