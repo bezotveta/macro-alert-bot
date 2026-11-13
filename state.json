@@ -651,14 +651,6 @@
     "previous": ""
    },
    {
-    "title": "Mortgage Delinquencies",
-    "country": "USD",
-    "date": "2026-11-12T12:59:00-05:00",
-    "impact": "Low",
-    "forecast": "",
-    "previous": "4.37%"
-   },
-   {
     "title": "30-y Bond Auction",
     "country": "USD",
     "date": "2026-11-12T13:01:00-05:00",
@@ -843,6 +835,14 @@
     "previous": ""
    },
    {
+    "title": "Mortgage Delinquencies",
+    "country": "USD",
+    "date": "2026-11-13T10:15:00-05:00",
+    "impact": "Low",
+    "forecast": "",
+    "previous": "4.37%"
+   },
+   {
     "title": "Natural Gas Storage",
     "country": "USD",
     "date": "2026-11-13T10:30:00-05:00",
@@ -891,6 +891,6 @@
     "previous": ""
    }
   ],
-  "fetched_at": "2026-11-12T18:32:34+00:00"
+  "fetched_at": "2026-11-13T02:32:35+00:00"
  }
 }
