@@ -33,7 +33,7 @@
    "pre5"
   ]
  },
- "digest": "2026-11-11",
+ "digest": "2026-11-13",
  "weekly": "2026-W45",
  "tg_offset": 576148957,
  "prefs": {
@@ -731,6 +731,22 @@
     "previous": "0.4%"
    },
    {
+    "title": "M2 Money Supply y/y",
+    "country": "CNY",
+    "date": "2026-11-13T04:00:00-05:00",
+    "impact": "Low",
+    "forecast": "7.2%",
+    "previous": "7.2%"
+   },
+   {
+    "title": "New Loans",
+    "country": "CNY",
+    "date": "2026-11-13T04:00:00-05:00",
+    "impact": "Low",
+    "forecast": "80B",
+    "previous": "1080B"
+   },
+   {
     "title": "Italian Trade Balance",
     "country": "EUR",
     "date": "2026-11-13T04:00:00-05:00",
@@ -761,22 +777,6 @@
     "impact": "Low",
     "forecast": "-4.5B",
     "previous": "-6.8B"
-   },
-   {
-    "title": "M2 Money Supply y/y",
-    "country": "CNY",
-    "date": "2026-11-13T05:03:00-05:00",
-    "impact": "Low",
-    "forecast": "7.2%",
-    "previous": "7.2%"
-   },
-   {
-    "title": "New Loans",
-    "country": "CNY",
-    "date": "2026-11-13T05:03:00-05:00",
-    "impact": "Low",
-    "forecast": "80B",
-    "previous": "1080B"
    },
    {
     "title": "Manufacturing Sales m/m",
@@ -891,6 +891,7 @@
     "previous": ""
    }
   ],
-  "fetched_at": "2026-11-13T02:32:35+00:00"
+  "fetched_at": "2026-11-13T15:16:47+00:00",
+  "failed_since": "2026-11-13T15:17:47+00:00"
  }
 }
