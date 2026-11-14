@@ -1,9 +1,5 @@
 {
  "sent": {
-  "JPY|BOJ Press Conference|2026-10-30T05:30": [
-   "pre30",
-   "pre5"
-  ],
   "GBP|Monetary Policy Summary|2026-11-05T12:00": [
    "pre30",
    "pre5"
@@ -891,6 +887,6 @@
     "previous": ""
    }
   ],
-  "fetched_at": "2026-11-13T23:29:23+00:00"
+  "fetched_at": "2026-11-14T05:16:06+00:00"
  }
 }
