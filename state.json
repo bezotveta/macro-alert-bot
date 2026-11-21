@@ -1,13 +1,5 @@
 {
  "sent": {
-  "USD|Non-Farm Employment Change|2026-11-06T13:30": [
-   "pre30",
-   "pre5"
-  ],
-  "USD|Unemployment Rate|2026-11-06T13:30": [
-   "pre30",
-   "pre5"
-  ],
   "USD|Core CPI m/m|2026-11-10T13:30": [
    "pre30",
    "pre5"
@@ -1035,6 +1027,6 @@
     "previous": ""
    }
   ],
-  "fetched_at": "2026-11-20T18:36:35+00:00"
+  "fetched_at": "2026-11-21T02:53:44+00:00"
  }
 }
