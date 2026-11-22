@@ -10,7 +10,7 @@
   ]
  },
  "digest": "2026-11-22",
- "weekly": "2026-W46",
+ "weekly": "2026-W47",
  "tg_offset": 576148957,
  "prefs": {
   "disabled": [],
@@ -136,7 +136,7 @@
     "date": "2026-11-23T08:30:00-05:00",
     "impact": "Low",
     "forecast": "",
-    "previous": ""
+    "previous": "8.7%"
    },
    {
     "title": "Flash Manufacturing PMI",
@@ -619,6 +619,6 @@
     "previous": "0.6%"
    }
   ],
-  "fetched_at": "2026-11-22T12:39:57+00:00"
+  "fetched_at": "2026-11-22T21:05:37+00:00"
  }
 }
