@@ -205,7 +205,7 @@
    {
     "title": "CB Leading Index m/m",
     "country": "CNY",
-    "date": "2026-11-24T09:00:00-05:00",
+    "date": "2026-11-24T08:51:00-05:00",
     "impact": "Low",
     "forecast": "",
     "previous": "-0.1%"
@@ -611,6 +611,6 @@
     "previous": "0.6%"
    }
   ],
-  "fetched_at": "2026-11-24T06:39:53+00:00"
+  "fetched_at": "2026-11-24T16:44:28+00:00"
  }
 }
