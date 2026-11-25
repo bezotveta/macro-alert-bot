@@ -1,14 +1,5 @@
 {
- "sent": {
-  "USD|Core CPI m/m|2026-11-10T13:30": [
-   "pre30",
-   "pre5"
-  ],
-  "USD|CPI m/m|2026-11-10T13:30": [
-   "pre30",
-   "pre5"
-  ]
- },
+ "sent": {},
  "digest": "2026-11-22",
  "weekly": "2026-W47",
  "tg_offset": 576148957,
@@ -339,6 +330,14 @@
     "previous": "3.37|1.1"
    },
    {
+    "title": "FOMC Member Bowman Speaks",
+    "country": "USD",
+    "date": "2026-11-25T07:25:00-05:00",
+    "impact": "Low",
+    "forecast": "",
+    "previous": ""
+   },
+   {
     "title": "Core PCE Price Index m/m",
     "country": "USD",
     "date": "2026-11-25T08:30:00-05:00",
@@ -415,7 +414,7 @@
     "country": "USD",
     "date": "2026-11-25T10:30:00-05:00",
     "impact": "Low",
-    "forecast": "",
+    "forecast": "2.0M",
     "previous": "3.4M"
    },
    {
@@ -576,7 +575,7 @@
     "date": "2026-11-27T05:33:00-05:00",
     "impact": "Low",
     "forecast": "",
-    "previous": ""
+    "previous": "4.49|1.6"
    },
    {
     "title": "German Buba President Nagel Speaks",
@@ -611,6 +610,6 @@
     "previous": "0.6%"
    }
   ],
-  "fetched_at": "2026-11-24T16:44:28+00:00"
+  "fetched_at": "2026-11-25T02:54:05+00:00"
  }
 }
