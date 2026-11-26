@@ -482,6 +482,14 @@
     "previous": "3.1%"
    },
    {
+    "title": "Euro Summit",
+    "country": "EUR",
+    "date": "2026-11-26T04:15:00-05:00",
+    "impact": "Low",
+    "forecast": "",
+    "previous": ""
+   },
+   {
     "title": "BOE Financial Stability Report",
     "country": "GBP",
     "date": "2026-11-26T05:30:00-05:00",
@@ -618,6 +626,6 @@
     "previous": "0.6%"
    }
   ],
-  "fetched_at": "2026-11-25T21:25:37+00:00"
+  "fetched_at": "2026-11-26T06:03:27+00:00"
  }
 }
